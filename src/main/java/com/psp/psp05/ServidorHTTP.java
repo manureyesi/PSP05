@@ -89,6 +89,7 @@ class ServidorHTTP {
         html = Paginas.html_index;
         printWriter.println(Mensajes.lineaInicial_OK);
         printWriter.println(Paginas.primeraCabecera);
+        printWriter.println(Paginas.segundaCabecera());
         printWriter.println("Content-Length: " + html.length() + 1);
         printWriter.println("\n");
         printWriter.println(html);
@@ -98,6 +99,7 @@ class ServidorHTTP {
         html = Paginas.html_quijote;
         printWriter.println(Mensajes.lineaInicial_OK);
         printWriter.println(Paginas.primeraCabecera);
+        printWriter.println(Paginas.segundaCabecera());
         printWriter.println("Content-Length: " + html.length() + 1);
         printWriter.println("\n");
         printWriter.println(html);
@@ -107,6 +109,7 @@ class ServidorHTTP {
         html = Paginas.html_noEncontrado;
         printWriter.println(Mensajes.lineaInicial_NotFound);
         printWriter.println(Paginas.primeraCabecera);
+        printWriter.println(Paginas.segundaCabecera());
         printWriter.println("Content-Length: " + html.length() + 1);
         printWriter.println("\n");
         printWriter.println(html);
