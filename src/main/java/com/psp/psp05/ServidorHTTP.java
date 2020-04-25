@@ -93,13 +93,15 @@ class ServidorHTTP {
         peticion = peticion.replaceAll(" ", "");
 
         //Parar Hilo para pruebas de rendimiento
+        /*
         try {
            //Parar peticion 5 segundo para pruebas
            Thread.sleep(5000);
         } catch (InterruptedException ex) {
            System.err.println("Error al parar Hilo");
         }
-
+        */
+        
         //si realmente se trata de una petición 'GET' (que es la única que vamos a
         //implementar en nuestro Servidor)
         if (peticion.startsWith("GET")) {
